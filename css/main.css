@@ -44,6 +44,9 @@ header {
   display: flex;
   /* background-color: rgb(228, 228, 235); */
   flex-direction: column;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .nav-bar {
   display: flex;
@@ -80,14 +83,75 @@ header {
 .nav-bar ul a:hover {
   color: var(--color-blue);
 }
-/* select#country {
-  width: 200px;
-} */
-
-/* select#country option[value="farsi"] {
-  background-image: url("../images/icons8-iran-96\ 1.png");
-  color: red;
-} */
+.country {
+  position: relative;
+  /* width: 10%; */
+  /* box-sizing: border-box; */
+}
+.dropdown {
+  display: flex;
+  align-items: center;
+  background-color: #93bfcf;
+  border-radius: 5px;
+  color: #fff;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+.drop-container .lang {
+  font-size: 14px;
+  width: 50px;
+  /* background-color: #1f8acf; */
+}
+.drop-container .flag img {
+  width: 25px;
+  height: 25px;
+}
+.dropdown .arrow {
+  content: "";
+  z-index: 11;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: rotate(-45deg);
+  margin-right: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.dropdown .arrow.rotate {
+  transform: rotate(135deg);
+}
+.dropdown .flag {
+  margin-right: 7px;
+}
+.other-lang {
+  margin-top: 1px;
+  position: absolute;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  display: none;
+}
+.show {
+  display: block;
+}
+.other-lang .lang-fa,
+.other-lang .lang-en {
+  border-bottom: 1px solid #ebebeb;
+}
+.other-lang .dropdown {
+  border-radius: 0;
+  justify-content: space-between;
+}
+.other-lang .dropdown:hover {
+  background-color: #bedbe6;
+}
+.dropdown img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 .head-content {
   background: var(--background-1);
 }
@@ -140,12 +204,10 @@ header {
 .detail-content .right {
   height: 300px;
   width: 50%;
-  /* background-color: rgb(214, 214, 235); */
 }
 .detail-content .right-title {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   width: 100%;
 }
 .detail-content .right-title .right-title-container {
@@ -182,11 +244,11 @@ header {
   align-items: center;
   margin-bottom: 10px;
 }
-.right-body-title h5{
-    color: var(--color-blue);
-    font-weight: bolder;
-    font-size: 18px;
-    margin-right: 5px;
+.right-body-title h5 {
+  color: var(--color-blue);
+  font-weight: bolder;
+  font-size: 18px;
+  margin-right: 5px;
 }
 .right-body-content {
   /* width: 90%; */

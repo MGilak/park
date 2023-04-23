@@ -5,8 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/bootstrap.rtl.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>park</title>
+    <title>Park</title>
   </head>
   <body>
     <header>
@@ -45,12 +52,33 @@
         </nav>
 
         <div class="country">
-          <select id="country">
-            <option class="aaa" value="farsi">
+          <div class="dropdown drop-container">
+            <div class="lang">فارسی</div>
+            <div class="flag">
               <img src="./images/icons8-iran-96 1.png" alt="" />
-              فارسییییی
-            </option>
-          </select>
+            </div>
+            <div class="arrow"></div>
+          </div>
+          <div class="other-lang">
+            <div class="lang-fa dropdown">
+              <div class="lang">فارسی</div>
+              <div class="flag">
+                <img src="./images/icons8-iran-96 1.png" alt="" />
+              </div>
+            </div>
+            <div class="lang-en dropdown">
+              <div class="lang">انگلیسی</div>
+              <div class="flag">
+                <img src="./images/usa.png" alt="" />
+              </div>
+            </div>
+            <div class="lang-ar dropdown">
+              <div class="lang">عربی</div>
+              <div class="flag">
+                <img src="./images/ar.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="head-content">
