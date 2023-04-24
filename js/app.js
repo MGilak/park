@@ -28,3 +28,17 @@ function changeLangContainer(lang, src) {
   otherLang.classList.remove("show");
   arrow.classList.remove("rotate");
 }
+
+// swiper slider
+let swiper = new Swiper(".mySwiper", {
+  slidesPerView: "auto",
+  spaceBetween: 10,
+  // centeredSlides: true,
+  // loop: true,
+  // grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    type: 'bullets',
+  },
+});
