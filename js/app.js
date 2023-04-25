@@ -50,3 +50,14 @@ let swiper2 = new Swiper(".swiper2", {
     type: "bullets",
   },
 });
+
+var swiper3 = new Swiper(".swiper3", {
+  effect: "cards",
+  grabCursor: true,
+  // slidesPerView: "auto",
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

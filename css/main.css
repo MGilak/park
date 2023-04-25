@@ -293,13 +293,7 @@ header {
 .components-logo {
   display: flex;
   height: 400px;
-
-  /* align-items: flex-start; */
 }
-/* .components-logo .item {
-  display: flex;
-
-} */
 .components-item {
   display: flex;
   flex-direction: column;
@@ -311,20 +305,44 @@ header {
   cursor: pointer;
   background-color: #fff;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  position: relative;
 }
+.components-item::after {
+  content: "";
+  background-color: #1f8acf;
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  border-radius: 50%;
+}
+.components-item:hover:after {
+  animation: shine 0.8s backwards;
+}
+@keyframes shine {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: 300px;
+    height: 300px;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .components-content .right {
-  /* background-color: #e6e4e4; */
   width: 33.3333%;
   height: 70%;
 }
 .components-content .middle {
-  /* background-color: #fab6b6; */
   width: 33.3333%;
   height: 70%;
   align-self: flex-end;
 }
 .components-content .left {
-  /* background-color: #d8d5ff; */
   width: 33.3333%;
   height: 70%;
 }
