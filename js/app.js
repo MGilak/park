@@ -30,15 +30,23 @@ function changeLangContainer(lang, src) {
 }
 
 // swiper slider
-let swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
   spaceBetween: 10,
-  // centeredSlides: true,
-  // loop: true,
-  // grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    type: 'bullets',
+    type: "bullets",
+  },
+});
+
+let swiper2 = new Swiper(".swiper2", {
+  direction: "vertical",
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    type: "bullets",
   },
 });
