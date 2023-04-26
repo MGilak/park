@@ -345,6 +345,7 @@
 /* video section */
 .video {
   margin-top: 120px;
+  padding-bottom: 30px;
 }
 .video-title {
   font-size: 20px;
@@ -390,7 +391,7 @@
 }
 .more-detail-btn {
   width: 15%;
-  height: 60px;
+  height: 55px;
   border: 1px solid var(--color-blue);
   color: var(--color-blue);
   border-radius: 10px;
@@ -400,4 +401,90 @@
 .more-detail-btn:hover {
   background-color: var(--color-blue);
   color: #fff;
+}
+
+/* ruler-item */
+.ruler-item {
+  background-color: #f1faff;
+}
+.ruler-item .top {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+.ruler-item .top-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: calc(20% - 10px);
+}
+.ruler-item .top-item p {
+  width: 60%;
+  white-space: nowrap;
+  text-align: center;
+  padding: 15px 0;
+}
+.ruler-item .top-item span {
+  color: var(--color-blue);
+  font-weight: bold;
+}
+
+/* swiper */
+.ruler-item .swiper4 {
+  width: 100%;
+  height: 100%;
+}
+
+.ruler-item .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* footer */
+footer {
+  background-color: #f1faff;
+  padding: 30px 0;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-item {
+  width: 20%;
+  line-height: 30px;
+}
+.footer-item h5 {
+  color: var(--color-blue);
+  font-weight: bold;
+}
+.footer-item a {
+  color: #555;
+  transition: all 0.2s ease-in-out;
+}
+.footer-item a:hover {
+  color: var(--color-blue);
+}
+.final-word {
+  width: 30%;
+}
+.footer-item-title {
+  margin-bottom: 10px;
+}
+.footer-image {
+  margin-top: 10px;
+}
+.footer-image img {
+  margin-right: 15px;
+}
+.footer-bottom .social > * {
+  margin-right: 10px;
+}
+.author {
+  font-weight: bold;
+  font-size: 18px;
 }
