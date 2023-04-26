@@ -27,6 +27,7 @@ p {
 body {
   font-family: "vazir";
   direction: rtl;
+  /* overflow: hidden; */
 }
 ul {
   list-style: none;

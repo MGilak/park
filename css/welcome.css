@@ -262,6 +262,9 @@
 }
 
 /* gallery */
+.gallery {
+  /* overflow: hidden; */
+}
 .gallery .container {
   flex-direction: column;
 }
@@ -288,7 +291,7 @@
 
 /* swiper */
 .gallery .swiper3 {
-  width: 70%;
+  width: 62%;
   height: 280px;
   direction: ltr;
   position: relative;
