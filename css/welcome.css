@@ -409,6 +409,7 @@
 /* ruler-item */
 .ruler-item {
   background-color: #f1faff;
+  padding-bottom: 60px;
 }
 .ruler-item .top {
   display: flex;
@@ -432,11 +433,18 @@
   color: var(--color-blue);
   font-weight: bold;
 }
-
+.ruler-item .bottom {
+  display: flex;
+  justify-content: center;
+}
 /* swiper */
 .ruler-item .swiper4 {
-  width: 100%;
+  width: 1000px;
   height: 100%;
+  overflow: hidden;
+}
+.ruler-item .swiper-wrapper {
+  display: flex;
 }
 
 .ruler-item .swiper-slide {
@@ -446,6 +454,185 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 190px;
+  padding: 10px;
+  cursor: pointer;
+  width: 21% !important;
+  transition: all 0.2s ease-in-out;
+}
+.ruler-item .swiper-slide.active {
+  width: 34% !important;
+}
+.ruler-item .swiper-slide > p {
+  display: none;
+  font-size: 15px;
+  width: 75%;
+  text-align: justify;
+  padding: 0 12px;
+}
+.ruler-item .swiper-slide.active > p {
+  display: block;
+  animation: showDetail 0.3s;
+}
+@keyframes showDetail {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.ruler-item .swiper-slide .ruler-box {
+  width: 40%;
+}
+.ruler-item .swiper-slide .ruler-box p {
+  color: var(--color-blue);
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.ruler-item .swiper-slide .ruler-box img {
+  width: 60px;
+  height: 60px;
+}
+.ruler-item .swiper-pagination {
+  bottom: unset;
+  background-color: aliceblue;
+  margin: 10px 0;
+}
+
+/* others */
+.others {
+  margin-top: 30px;
+}
+.others .title{
+    padding-bottom: 20px;
+}
+.others-container {
+  width: 100%;
+  position: relative;
+}
+.others-container::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  right: -10px;
+  height: 1px;
+  background: #496ba9;
+  bottom: 11px;
+}
+
+.others-title {
+  position: relative;
+  border-bottom: 1.2px solid #496ba9;
+  min-height: 100px;
+}
+.others-title-items {
+  min-height: 100px;
+}
+.others-title-items .item-center img,
+.others-title-items .item-center svg {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  transition: all 0.2s ease-in-out;
+}
+.others-title-items .item {
+  width: calc(100% / 7);
+  padding: 0 10px;
+  position: relative;
+}
+.others-title-items .item.active .item-center::after {
+  content: "";
+  position: absolute;
+  width: 89px;
+  height: 148px;
+  background: url(../images/Vecto.png) no-repeat;
+  bottom: -1px;
+  right: -28px;
+}
+.others-title-items .item.active .item-center::before {
+  content: "";
+  position: absolute;
+  width: 89px;
+  height: 148px;
+  background: url(../images/Vecto1.png) no-repeat;
+  bottom: -1px;
+  left: -28px;
+}
+.others-title-items .item.active {
+  border-bottom: 1.2px solid #fff;
+  margin-bottom: -1.5px;
+  z-index: 99999;
+  padding: 0 20px;
+}
+.others-border {
+  width: 100%;
+}
+.others-title-items .item .item-center {
+  position: relative;
+  margin-bottom: 15px;
+}
+.others-title-items .item-center {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+.others-title-items .item.active .item-center {
+}
+.others-title-items .item .border-img {
+  opacity: 0;
+}
+
+.others-title-items .item.active .border-img {
+  opacity: 1;
+}
+.others-title-items .item-center img {
+    width: 60px;
+    height: 60px;
+}
+.others-title-items .item-center p {
+  font-weight: bold;
+  width: 70%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  margin-top: 5px;
+  white-space: nowrap;
+}
+.others-content {
+  display: flex;
+  margin-top: 15px;
+}
+.others-content .tabs-detail {
+  width: 26%;
+  display: flex;
+  justify-content: center;
+}
+.others-content .tabs-detail-container {
+  width: 80%;
+  box-shadow: 0px 0px 30px 0px #0000000d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.tabs-detail-item {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  cursor: pointer;
+  border-bottom: 1px solid #d9d9d9;
+  position: relative;
+}
+.tabs-detail-item p {
+  margin-right: 10px;
 }
 
 /* footer */

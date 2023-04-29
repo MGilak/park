@@ -64,13 +64,34 @@ var swiper3 = new Swiper(".swiper3", {
 var swiper4 = new Swiper(".swiper4", {
   slidesPerView: 4,
   spaceBetween: 10,
-  // loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    type: "bullets",
   },
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
 });
+
+// ruler-item
+const rulerSwiperslides = document.querySelectorAll(
+  ".ruler-item .swiper-slide"
+);
+changeActive(rulerSwiperslides);
+
+// add and remove active class
+function changeActive(nodeList) {
+  nodeList.forEach((item) => {
+    item.addEventListener("click", () => {
+      for (let i = 0; i < nodeList.length; i++) {
+        if (nodeList[i].classList.contains("active")) {
+          nodeList[i].classList.remove("active");
+        }
+      }
+
+      item.classList.add("active");
+    });
+  });
+}
+
+// others
+const othersItem = document.querySelectorAll(".others-title .item");
+changeActive(othersItem);
