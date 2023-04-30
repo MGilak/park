@@ -507,8 +507,8 @@
 .others {
   margin-top: 30px;
 }
-.others .title{
-    padding-bottom: 20px;
+.others .title {
+  padding-bottom: 20px;
 }
 .others-container {
   width: 100%;
@@ -594,8 +594,8 @@
   opacity: 1;
 }
 .others-title-items .item-center img {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
 .others-title-items .item-center p {
   font-weight: bold;
@@ -639,7 +639,40 @@
 footer {
   background-color: #f1faff;
   padding: 30px 0;
+  padding-top: 160px;
+  position: relative;
 }
+.footer-head {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 30%;
+  height: 20%;
+}
+.corner-left,
+.corner-right {
+  width: 68%;
+  height: 151px;
+}
+.corner-right {
+  position: absolute;
+  right: -28px;
+  top: -8%;
+}
+.corner-left {
+  position: absolute;
+  left: -15%;
+  top: -8px;
+}
+.footer-head-logo {
+  position: absolute;
+  left: 36%;
+  z-index: 999;
+  top: 5%;
+}
+
 .footer-content {
   display: flex;
   justify-content: space-between;
