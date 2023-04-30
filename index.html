@@ -11,10 +11,12 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/welcome.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <title>Park</title>
   </head>
   <body>
-    <header>
+    <div class="blr-page"></div>
+    <header class="container-fluid">
       <div class="nav-bar">
         <div class="logo">
           <a href="#"><img src="./images/logo 1.png" alt="" /></a>
@@ -22,6 +24,9 @@
 
         <nav>
           <ul>
+            <button type="button" class="close" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
             <li>
               <img src="./images/icons8-home-page-48.png" alt="" />
               <a href="#">خانه</a>
@@ -77,6 +82,9 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="humbutgar-menu">
+          <img src="./images/icons8-menu-rounded-100 1.png" alt="" />
         </div>
       </div>
     </header>
@@ -360,10 +368,7 @@
                 </div>
               </div>
               <div class="col">
-                <div
-                  class="accordion"
-                  id="accordionFlushExample"
-                >
+                <div class="accordion" id="accordionFlushExample">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
                       <button

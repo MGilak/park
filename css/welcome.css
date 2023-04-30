@@ -34,6 +34,9 @@
   justify-content: flex-start;
   margin-left: 5px;
 }
+.accordion-button {
+  /* white-space: nowrap; */
+}
 .accordion-button::after {
   margin-right: 60px;
 }
@@ -259,6 +262,7 @@ accordion-flush .accordion-button::after {
 .notif .swiper2 .swiper-slide .info a {
   display: flex;
   align-items: center;
+  margin-top: 10px;
 }
 .notif .swiper2 .swiper-slide .info svg {
   width: 21px;

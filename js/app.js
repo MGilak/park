@@ -95,3 +95,17 @@ function changeActive(nodeList) {
 // others
 const othersItem = document.querySelectorAll(".others-title .item");
 changeActive(othersItem);
+
+// responsive
+// header
+const humbutgarMenu = document.querySelector(".humbutgar-menu");
+const navbar = document.querySelector(".nav-bar nav");
+const closeNavbar = document.querySelector(".close");
+
+console.log(navbar);
+humbutgarMenu.addEventListener("click", () => {
+  navbar.classList.add("show");
+});
+closeNavbar.addEventListener("click", () => {
+  navbar.classList.remove("show");
+});

@@ -50,6 +50,10 @@ header {
   margin-right: auto;
   margin-left: auto;
 }
+header .humbutgar-menu {
+  display: none;
+  cursor: pointer;
+}
 .nav-bar {
   display: flex;
   /* background-color: rgb(228, 228, 235); */
@@ -68,6 +72,9 @@ header {
 }
 .nav-bar ul {
   display: flex;
+}
+.nav-bar ul .close {
+  display: none;
 }
 .nav-bar ul li {
   margin-left: 50px;
@@ -159,7 +166,7 @@ header {
 }
 .head-content .container {
   display: flex;
-  height: 480px;
+  min-height: 480px;
 }
 .head-content-right {
   width: 50%;
@@ -260,7 +267,7 @@ header {
 }
 
 .detail-content .left {
-  width: 50%;
+  /* width: 50% !important; */
   height: 300px;
 }
 .detail-content .left img {
@@ -333,6 +340,9 @@ header {
   100% {
     opacity: 0;
   }
+}
+.components-item p {
+  text-align: center;
 }
 
 .components-content .right {
