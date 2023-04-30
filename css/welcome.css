@@ -18,16 +18,35 @@
   width: 70%;
   text-align: justify;
 }
+.welcome .right img {
+  margin-top: 30px;
+}
 .welcome .left {
   width: 50%;
+}
+.row {
+  max-height: 300px;
 }
 .col {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-
+  justify-content: flex-start;
   margin-left: 5px;
+}
+.accordion-button::after {
+  margin-right: 60px;
+}
+accordion-flush .accordion-button::after {
+  margin-right: 70px;
+}
+.accordion-item {
+  margin-bottom: 7px;
+}
+.accordion-button {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 .form-select {
   width: 100%;
@@ -144,6 +163,7 @@
 .blog p {
   width: 87%;
   font-size: 15px;
+  margin-bottom: 11px;
 }
 .blog .btn-container {
   width: 85%;
