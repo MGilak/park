@@ -530,6 +530,7 @@ accordion-flush .accordion-button::after {
 /* others */
 .others {
   margin-top: 30px;
+  padding-bottom: 100px;
 }
 .others .title {
   padding-bottom: 20px;
@@ -558,8 +559,8 @@ accordion-flush .accordion-button::after {
 }
 .others-title-items .item-center img,
 .others-title-items .item-center svg {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
   transition: all 0.2s ease-in-out;
 }
@@ -629,6 +630,7 @@ accordion-flush .accordion-button::after {
   font-size: 16px;
   margin-top: 5px;
   white-space: nowrap;
+  width: 100%;
 }
 .others-content {
   display: flex;
@@ -638,6 +640,8 @@ accordion-flush .accordion-button::after {
   width: 26%;
   display: flex;
   justify-content: center;
+  flex: 2;
+  align-self: self-start;
 }
 .others-content .tabs-detail-container {
   width: 80%;
@@ -657,6 +661,21 @@ accordion-flush .accordion-button::after {
 }
 .tabs-detail-item p {
   margin-right: 10px;
+}
+.detail-info {
+  flex: 5;
+  line-height: 30px;
+  text-align: justify;
+  padding: 20px;
+  box-shadow: 0px 0px 30px 0px #0000000d;
+}
+.others .btn-container {
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+}
+.others .btn-container .section-btn {
+  padding: 5px 29px;
 }
 
 /* footer */
@@ -682,12 +701,12 @@ footer {
 }
 .corner-right {
   position: absolute;
-  right: -28px;
+  right: -26px;
   top: -8%;
 }
 .corner-left {
   position: absolute;
-  left: -15%;
+  left: -14%;
   top: -8px;
 }
 .footer-head-logo {
