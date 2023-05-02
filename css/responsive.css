@@ -393,9 +393,11 @@
   .ruler-item .swiper-slide.active .ruler-box p {
     font-size: 14px;
   }
-
+  /* oters */
+  .others-content .tabs-detail{
+    display: none;
+  }
   /* footer */
-
   .corner-right {
     right: -94px;
   }
@@ -712,7 +714,6 @@
     width: 90%;
   }
   .videos .more-detail-btn {
-    /* margin-right: 62px; */
     width: 40%;
   }
 

@@ -44,7 +44,6 @@ a {
 /*  */
 header {
   display: flex;
-  /* background-color: rgb(228, 228, 235); */
   flex-direction: column;
   width: 1200px;
   margin-right: auto;
@@ -93,8 +92,6 @@ header .humbutgar-menu {
 }
 .country {
   position: relative;
-  /* width: 10%; */
-  /* box-sizing: border-box; */
 }
 .dropdown {
   display: flex;
@@ -108,7 +105,6 @@ header .humbutgar-menu {
 .drop-container .lang {
   font-size: 14px;
   width: 50px;
-  /* background-color: #1f8acf; */
 }
 .drop-container .flag img {
   width: 25px;
@@ -266,7 +262,6 @@ header .humbutgar-menu {
 }
 
 .detail-content .left {
-  /* width: 50% !important; */
   height: 300px;
 }
 .detail-content .left img {
@@ -356,8 +351,4 @@ header .humbutgar-menu {
 .components-content .left {
   width: 33.3333%;
   height: 70%;
-}
-/*  */
-.other {
-  height: 500px;
 }

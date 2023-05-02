@@ -101,7 +101,6 @@ changeActive(othersItem);
 const humbutgarMenu = document.querySelector(".humbutgar-menu");
 const navbar = document.querySelector(".nav-bar nav");
 const closeNavbar = document.querySelector(".close");
-// const bgBlur = document.querySelector(".blr-page");
 
 humbutgarMenu.addEventListener("click", () => {
   navbar.classList.add("show");
