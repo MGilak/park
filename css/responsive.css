@@ -1,26 +1,44 @@
 @media only screen and (max-width: 1199px) {
+  body.open-menu .blr-page {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+  }
   header {
     position: relative;
   }
   header .nav-bar nav {
+    opacity: 0;
+    transform: translateX(-300px);
+    z-index: 110;
+  }
+  header .nav-bar nav {
     position: fixed;
-    left: 0;
+    left: -300px;
     top: 0;
     width: 300px;
     height: 100vh;
     background-color: #f7f7f7;
-    transform: translateX(-300px);
     opacity: 0;
-    transition: transform 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   header .nav-bar nav.show {
-    transition: all 0.2s ease-in-out;
     transform: translateX(0);
     opacity: 1;
+    left: 0;
   }
+  header .nav-bar nav.close-again {
+    transform: translateX(-300px);
+    animation: closeMenu 1s;
+  }
+
   header .nav-bar nav ul {
     flex-direction: column;
-    /* align-items: center; */
     padding: 0 30px;
     z-index: 999;
   }
@@ -35,11 +53,11 @@
     background-color: transparent;
   }
   header .nav-bar nav ul li {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
   header .nav-bar nav ul li img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
   header .nav-bar nav ul li a {
     font-size: 20px;
@@ -390,7 +408,7 @@
   }
   .footer-head-logo {
     left: 30%;
-}
+  }
 
   .corner-right {
     top: -9px;
@@ -438,6 +456,12 @@
   }
 }
 
+@media only screen and (max-width: 630px) {
+  .corner-left,
+  .corner-right {
+    width: 220px;
+  }
+}
 @media only screen and (max-width: 576px) {
   .title h5 {
     font-size: 24px;
@@ -476,6 +500,18 @@
     margin-top: -6px;
     margin-right: 35px;
   }
+  .gallery .right p {
+    font-size: 19px;
+  }
+  .gallery .swiper-button-prev::after {
+    left: 27px;
+  }
+  .gallery .swiper-button-next::after {
+    right: 1px;
+  }
+  .ruler-item .swiper-slide.active {
+    width: 41% !important;
+  }
   .notif.notif .swiper2 .swiper-slide .info p {
     font-size: 13px;
     width: 86%;
@@ -498,7 +534,7 @@
 
   /* footer */
   .corner-right {
-    right: -49%
+    right: -49%;
   }
   .footer-head-logo {
     left: 19%;

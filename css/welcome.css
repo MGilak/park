@@ -204,7 +204,6 @@ accordion-flush .accordion-button::after {
   position: relative;
 }
 .notif-title {
-  z-index: 9999 !important;
   overflow: hidden;
 }
 .notif .container {
@@ -551,7 +550,7 @@ accordion-flush .accordion-button::after {
 
 .others-title {
   position: relative;
-  border-bottom: 1.2px solid #496ba9;
+  border-bottom: 2px solid #496ba9;
   min-height: 100px;
 }
 .others-title-items {
@@ -575,7 +574,7 @@ accordion-flush .accordion-button::after {
   width: 89px;
   height: 148px;
   background: url(../images/Vecto.png) no-repeat;
-  bottom: -1px;
+  bottom: -2px;
   right: -28px;
 }
 .others-title-items .item.active .item-center::before {
@@ -584,13 +583,12 @@ accordion-flush .accordion-button::after {
   width: 89px;
   height: 148px;
   background: url(../images/Vecto1.png) no-repeat;
-  bottom: -1px;
+  bottom: -2px;
   left: -28px;
 }
 .others-title-items .item.active {
-  border-bottom: 1.2px solid #fff;
+  border-bottom: 2px solid #fff;
   margin-bottom: -1.5px;
-  z-index: 99999;
   padding: 0 20px;
 }
 .others-border {

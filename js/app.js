@@ -101,11 +101,28 @@ changeActive(othersItem);
 const humbutgarMenu = document.querySelector(".humbutgar-menu");
 const navbar = document.querySelector(".nav-bar nav");
 const closeNavbar = document.querySelector(".close");
+// const bgBlur = document.querySelector(".blr-page");
 
-console.log(navbar);
 humbutgarMenu.addEventListener("click", () => {
   navbar.classList.add("show");
+  document.body.classList.add("open-menu");
+  if (navbar.classList.contains("close-again")) {
+    navbar.classList.remove("close-again");
+  }
 });
+
 closeNavbar.addEventListener("click", () => {
-  navbar.classList.remove("show");
+  navbar.classList.add("close-again");
+  document.body.classList.remove("open-menu");
+  if (navbar.classList.contains("show")) {
+    navbar.classList.remove("show");
+  }
 });
+
+document.onclick = function (e) {
+  if (!navbar.contains(e.target) && !humbutgarMenu.contains(e.target)) {
+    document.body.classList.remove("open-menu");
+    navbar.classList.remove("show");
+    document.body.classList.remove("open-menu");
+  }
+};
