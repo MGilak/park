@@ -265,6 +265,10 @@ accordion-flush .accordion-button::after {
 }
 .notif .swiper2 .swiper-slide {
   justify-content: space-between;
+  opacity: 0;
+}
+.notif .swiper2 .swiper-slide-active{
+  opacity: 1;
 }
 .notif .swiper2 .info-img {
   left: -30px;
@@ -275,9 +279,18 @@ accordion-flush .accordion-button::after {
   width: 10px;
   height: 10px;
 }
-.notif .swiper-slide-next,
+/* .notif .swiper-slide-next,
 .notif .swiper-slide-prev {
   opacity: 0;
+} */
+.swiper2 .swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical > .swiper-pagination-bullets {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: absolute;
+  right: -605px;
+  /* background-color: red; */
 }
 
 /* gallery */

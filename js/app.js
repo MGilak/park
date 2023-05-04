@@ -43,7 +43,17 @@ let swiper = new Swiper(".swiper", {
 let swiper2 = new Swiper(".swiper2", {
   direction: "vertical",
   slidesPerView: "auto",
-  spaceBetween: 30,
+  grabCursor: true,
+  // spaceBetween: 30,
+
+  // direction: "vertical",
+  // loop: true,
+  // speed: speed,
+  // mousewheel: true,
+  // keyboard: {
+  //   enabled: true,
+  // },
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
