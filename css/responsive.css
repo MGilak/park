@@ -516,6 +516,21 @@
     margin-top: -6px;
     margin-right: 35px;
   }
+
+  /* gallery */
+  .gallery-content {
+    flex-direction: column;
+  }
+  .gallery .right {
+    width: 100%;
+    margin-bottom: 44px;
+  }
+  .gallery .left {
+    width: 100%;
+  }
+  .gallery .swiper3 {
+    width: 43%;
+  }
   .gallery .right p {
     font-size: 19px;
   }
@@ -525,9 +540,13 @@
   .gallery .swiper-button-next::after {
     right: 1px;
   }
+
+  /*  */
   .ruler-item .swiper-slide.active {
     width: 41% !important;
   }
+
+  /* notif */
   .notif.notif .swiper2 .swiper-slide .info p {
     font-size: 13px;
     width: 86%;
