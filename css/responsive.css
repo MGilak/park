@@ -541,6 +541,11 @@
     right: 1px;
   }
 
+  /* videos */
+  .videos video {
+    width: 100%;
+  }
+
   /*  */
   .ruler-item .swiper-slide.active {
     width: 41% !important;

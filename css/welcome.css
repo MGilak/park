@@ -267,7 +267,7 @@ accordion-flush .accordion-button::after {
   justify-content: space-between;
   opacity: 0;
 }
-.notif .swiper2 .swiper-slide-active{
+.notif .swiper2 .swiper-slide-active {
   opacity: 1;
 }
 .notif .swiper2 .info-img {
@@ -378,6 +378,9 @@ accordion-flush .accordion-button::after {
 .video {
   margin-top: 120px;
   padding-bottom: 30px;
+}
+.video .modal-content {
+  border: none;
 }
 .video-title {
   font-size: 20px;
