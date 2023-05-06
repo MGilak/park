@@ -16,6 +16,16 @@
     top: -10%;
     left: 78px;
   }
+  .swiper2 .swiper-pagination-vertical.swiper-pagination-bullets,
+  .swiper-vertical > .swiper-pagination-bullets {
+    right: -703px;
+  }
+  .videos-item .play-img {
+    left: 60%;
+  }
+  .welcome {
+    padding-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
