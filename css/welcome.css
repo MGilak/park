@@ -561,6 +561,7 @@ accordion-flush .accordion-button::after {
   position: relative;
   border-bottom: 2px solid #496ba9;
   min-height: 100px;
+  position: relative;
 }
 .others-title-items {
   min-height: 100px;
@@ -576,6 +577,7 @@ accordion-flush .accordion-button::after {
   width: calc(100% / 7);
   padding: 0 10px;
   position: relative;
+  /* border-bottom: 2px solid #496ba9; */
 }
 .others-title-items .item.active .item-center::after {
   content: "";
@@ -596,10 +598,30 @@ accordion-flush .accordion-button::after {
   left: -28px;
 }
 .others-title-items .item.active {
-  border-bottom: 2px solid #fff;
+  border: 2px solid #ffffff;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
   margin-bottom: -1.5px;
   padding: 0 20px;
+  position: relative;
 }
+/* .others-title-items .item.active::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  background: linear-gradient(
+    to right,
+    rgba(254, 255, 255, 0) 0,
+    #fff 5%,
+    #fff 95%,
+    rgba(255, 255, 255, 0) 100%
+  )
+} */
 .others-border {
   width: 100%;
 }
