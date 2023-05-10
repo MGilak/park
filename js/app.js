@@ -33,6 +33,7 @@ function changeLangContainer(lang, src) {
 let swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
   spaceBetween: 10,
+  // loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

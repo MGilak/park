@@ -2,6 +2,17 @@ const navTitles = document.querySelectorAll("nav ul a");
 const headContentRightUp = document.querySelector(".head-content-right h1");
 const headContentRightDown = document.querySelector(".head-content-right h3");
 const langs = document.querySelectorAll(".lang");
+const detailTitle = document.querySelectorAll(".detailEn");
+const compEnList = document.querySelectorAll(".compEn");
+const welcEnList = document.querySelectorAll(".welcEn");
+const blogEnList = document.querySelectorAll(".blogEn");
+const notifEnList = document.querySelectorAll(".notifEn");
+const gallEnList = document.querySelectorAll(".gallEn");
+const videoEnList = document.querySelectorAll(".videoEn");
+const rulerEnList = document.querySelectorAll(".rulEn");
+const otherEnList = document.querySelectorAll(".otherEn");
+const footerEnList = document.querySelectorAll(".footerEn");
+const footBottEnList = document.querySelector(".footerBottEn");
 
 //   function
 function replaceContent(NodeList, newArray) {
@@ -38,7 +49,6 @@ langEn.addEventListener("click", () => {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore";
 
   // detail
-  const detailTitle = document.querySelectorAll(".detailEn");
   const detailEnContent = [
     "Know More",
     "A view of Sistan and Baluchistan science and technology park",
@@ -48,7 +58,6 @@ langEn.addEventListener("click", () => {
   replaceContent(detailTitle, detailEnContent);
 
   //components
-  const compEnList = document.querySelectorAll(".compEn");
   const compEnContent = [
     "The main center of the park",
     "Technology cores",
@@ -61,7 +70,6 @@ langEn.addEventListener("click", () => {
   replaceContent(compEnList, compEnContent);
 
   //   welcome
-  const welcEnList = document.querySelectorAll(".welcEn");
   const welcEnContent = [
     "Other departments",
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore laboriosam suscipit neque veritatis, fugit, earum magnam nisi sequi voluptatem aspernatur doloremque natus, rem officiis non fugiat quaeratodit in!",
@@ -83,7 +91,6 @@ langEn.addEventListener("click", () => {
   replaceContent(welcEnList, welcEnContent);
 
   //  blog
-  const blogEnList = document.querySelectorAll(".blogEn");
   const blogEnContent = [
     "News and Articles",
     "The festival of goldsmiths of the glory of Iran",
@@ -108,7 +115,6 @@ langEn.addEventListener("click", () => {
   replaceContent(blogEnList, blogEnContent);
 
   // notif
-  const notifEnList = document.querySelectorAll(".notifEn");
   const notifEnContent = [
     "Announcements and Conferences",
     "In this section, you can be informed about the news of conferences and new decisions. Lorem Epsom is a fake text produced with incomprehensible simplicity from the printing industry and using graphic designers, printers and texts, but also newspapers and magazines in columns and rows as necessary.",
@@ -128,7 +134,6 @@ langEn.addEventListener("click", () => {
   replaceContent(notifEnList, notifEnContent);
 
   //   gallery
-  const gallEnList = document.querySelectorAll(".gallEn");
   const gallEnContent = [
     "Gallery of images and videos",
     "We can see the pictures of the beautiful scientific and cultural park of Sistan and Baluchistan here (this is a slider and its slides will be changed to album mode)",
@@ -140,7 +145,6 @@ langEn.addEventListener("click", () => {
   replaceContent(gallEnList, gallEnContent);
 
   // video
-  const videoEnList = document.querySelectorAll(".videoEn");
   const videoEnContent = [
     "See a more complete view in the videos below",
     "Innovation Center",
@@ -154,7 +158,6 @@ langEn.addEventListener("click", () => {
   replaceContent(videoEnList, videoEnContent);
 
   // ruler-item
-  const rulerEnList = document.querySelectorAll(".rulEn");
   const rulerEnContent = [
     "About us and our Services",
     "The number of employees",
@@ -176,7 +179,6 @@ langEn.addEventListener("click", () => {
   replaceContent(rulerEnList, rulerEnContent);
 
   // others
-  const otherEnList = document.querySelectorAll(".otherEn");
   const otherEnContent = [
     "Other Centers",
     "Comprehensive Park",
@@ -212,7 +214,6 @@ langEn.addEventListener("click", () => {
   replaceContent(otherEnList, otherEnContent);
 
   // footer
-  const footerEnList = document.querySelectorAll(".footerEn");
   const footerEnContent = [
     "Final word",
     "We are very happy that you visited the website of Sistan and Baluchistan Science and Technology Park, Lorem Epsom is a fake text produced with incomprehensible simplicity from the printing industry and using graphic designers, printers and texts, but also newspapers and magazines.",
@@ -234,6 +235,5 @@ langEn.addEventListener("click", () => {
   replaceContent(footerEnList, footerEnContent);
 
   // footer-bottom
-  const footBottEnList = document.querySelector(".footerBottEn");
   footBottEnList.innerHTML = "UI design by MawDevelopers team";
 });

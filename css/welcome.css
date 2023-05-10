@@ -1,6 +1,9 @@
 .welcome {
   background-color: #f1faff;
 }
+body.enlang .welcome {
+  padding-bottom: 37px;
+}
 .welcome .welcome-title {
   text-align: center;
   padding: 30px;
@@ -37,6 +40,9 @@
 .accordion-button::after {
   margin-right: 60px;
 }
+body.enlang .accordion-button::after {
+  margin-right: 0;
+}
 accordion-flush .accordion-button::after {
   margin-right: 70px;
 }
@@ -47,6 +53,9 @@ accordion-flush .accordion-button::after {
   padding: 10px;
   display: flex;
   justify-content: space-between;
+}
+body.enlang .accordion-button {
+  text-align: left;
 }
 .form-select {
   width: 100%;
@@ -90,6 +99,9 @@ accordion-flush .accordion-button::after {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 0px 40px 0px #00000014;
+}
+body.enlang .blog .right {
+  direction: rtl;
 }
 /* swiper slider */
 .swiper-container {
@@ -160,10 +172,16 @@ accordion-flush .accordion-button::after {
   line-height: 25px;
   font-weight: bolder;
 }
+body.enlang .blog h5 {
+  font-size: 18px;
+}
 .blog p {
   width: 87%;
   font-size: 15px;
   margin-bottom: 11px;
+}
+body.enlang .blog p {
+  font-size: 14px;
 }
 .blog .btn-container {
   width: 85%;
@@ -192,7 +210,12 @@ accordion-flush .accordion-button::after {
 .left-item-bottom .btn-container {
   margin-top: 30px;
 }
-
+body.enlang .left-item-bottom .btn-container {
+  margin: 14px 0;
+}
+body.enlang .left-item-bottom h5 {
+  padding: 10px 0;
+}
 /* notif section  */
 .notif {
   background-color: #f1faff;
@@ -270,6 +293,9 @@ accordion-flush .accordion-button::after {
 .notif .swiper2 .swiper-slide-active {
   opacity: 1;
 }
+body.enlang .notif .swiper2 .swiper-slide-active {
+  flex-direction: row-reverse;
+}
 .notif .swiper2 .info-img {
   left: -30px;
   position: absolute !important;
@@ -279,10 +305,6 @@ accordion-flush .accordion-button::after {
   width: 10px;
   height: 10px;
 }
-/* .notif .swiper-slide-next,
-.notif .swiper-slide-prev {
-  opacity: 0;
-} */
 .swiper2 .swiper-pagination-vertical.swiper-pagination-bullets,
 .swiper-vertical > .swiper-pagination-bullets {
   display: flex;
@@ -290,9 +312,12 @@ accordion-flush .accordion-button::after {
   align-items: end;
   position: absolute;
   right: -605px;
-  /* background-color: red; */
 }
-
+body.enlang .swiper2 .swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical > .swiper-pagination-bullets {
+  left: 596px;
+  align-items: start;
+}
 /* gallery */
 .gallery .container {
   flex-direction: column;
@@ -410,6 +435,9 @@ accordion-flush .accordion-button::after {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+body.enlang .videos-item p {
+  font-weight: 500;
 }
 .videos-item .play-img {
   position: absolute;
