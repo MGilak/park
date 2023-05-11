@@ -49,6 +49,57 @@ const others = [
     "رویداد ششم",
   ],
 ];
+const othersEn = [
+  [
+    "History of Park Comprehensive Growth Center",
+    "Mamoud Gilk",
+    "MawDevelopers",
+    "Lorem Ipsom",
+    "Conference",
+  ],
+  [
+    "History of Bampur Innovation Center ",
+    "MohammadReza Zakeri",
+    "sabzlearn",
+    "first core",
+    "first event",
+  ],
+  [
+    "History of Zahak Innovation Center ",
+    "Sara Ziarati",
+    "yahoo.com",
+    "second core",
+    "second event",
+  ],
+  [
+    "History of Zabul University Growth Center ",
+    "Emad Solhjoo",
+    "google.com",
+    "third core",
+    "third event",
+  ],
+  [
+    "History of Sarvan Growth Center ",
+    "Farzane Madadi",
+    "torob.ir",
+    "Fourth core",
+    "Fourth event",
+  ],
+  [
+    "History of Maritime Growth Center ",
+    "Reza Dadkhah",
+    "toplearn.com",
+    "fifth core",
+    "fifth event",
+  ],
+  [
+    "History of International Growth Center ",
+    "Milad Bahrami",
+    "react.org",
+    "sixth core",
+    "sixth event",
+  ],
+];
 
 const titles = document.querySelectorAll(".others-title-items .item");
 const info = document.querySelector(".detail-info-item");
@@ -60,15 +111,39 @@ window.onload = function () {
 
 let title_index = 0;
 
-titles.forEach((item, index) => {
-  item.addEventListener("click", () => {
-    info.innerHTML = others[index][0];
-    title_index = index;
+function firstPart(others) {
+  titles.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      info.innerHTML = others[index][0];
+      title_index = index;
+    });
   });
+}
+
+function otherPart(others) {
+  tabsDetail.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      info.innerHTML = others[title_index][index];
+    });
+  });
+}
+
+
+firstPart(others);
+otherPart(others);
+
+langFa.addEventListener("click", () => {
+  firstPart(others);
 });
 
-tabsDetail.forEach((item, index) => {
-  item.addEventListener("click", () => {
-    info.innerHTML = others[title_index][index];
-  });
+langFa.addEventListener("click", () => {
+  otherPart(others);
+});
+
+langEn.addEventListener("click", () => {
+  firstPart(othersEn);
+});
+
+langEn.addEventListener("click", () => {
+  otherPart(othersEn);
 });

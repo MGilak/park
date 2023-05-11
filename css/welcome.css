@@ -490,7 +490,7 @@ body.enlang .videos-item p {
   padding: 15px 0;
 }
 body.enlang .ruler-item .top-item p {
-  white-space: normal ;
+  white-space: normal;
 }
 .ruler-item .top-item span {
   color: var(--color-blue);
@@ -724,6 +724,10 @@ body.enlang .others-title-items .item-center p {
 }
 .tabs-detail-item p {
   margin-right: 10px;
+}
+body.enlang .tabs-detail-item p {
+  margin-right: 0;
+  margin-left: 10px;
 }
 .detail-info {
   flex: 5;
