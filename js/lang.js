@@ -181,8 +181,8 @@ langEn.addEventListener("click", () => {
   // others
   const otherEnContent = [
     "Other Centers",
-    "Comprehensive Park",
-    "Growth Center",
+    "Comprehensive",
+    "Park Growth Center",
     "Bampur Innovation",
     "Center",
     "Zahak Innovation",

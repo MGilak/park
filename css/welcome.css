@@ -489,6 +489,9 @@ body.enlang .videos-item p {
   text-align: center;
   padding: 15px 0;
 }
+body.enlang .ruler-item .top-item p {
+  white-space: normal ;
+}
 .ruler-item .top-item span {
   color: var(--color-blue);
   font-weight: bold;
@@ -613,7 +616,7 @@ body.enlang .videos-item p {
   width: 89px;
   height: 148px;
   background: url(../images/Vecto.png) no-repeat;
-  bottom: -2px;
+  bottom: -3px;
   right: -28px;
 }
 .others-title-items .item.active .item-center::before {
@@ -622,8 +625,12 @@ body.enlang .videos-item p {
   width: 89px;
   height: 148px;
   background: url(../images/Vecto1.png) no-repeat;
-  bottom: -2px;
+  bottom: -3px;
   left: -28px;
+}
+body.enlang .others-title-items .item.active .item-center::after,
+body.enlang .others-title-items .item.active .item-center::before {
+  bottom: -3px;
 }
 .others-title-items .item.active {
   border: 2px solid #ffffff;
@@ -634,22 +641,20 @@ body.enlang .videos-item p {
   padding: 0 20px;
   position: relative;
 }
-/* .others-title-items .item.active::after {
-  position: absolute;
+body.enlang .others-title-items .item.active {
+  width: calc(100% / 5);
+  margin-bottom: -4.1px;
+  border-bottom: 5px solid #ffffff;
+}
+body.enlang .others-title-items .item.active::after {
   content: "";
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  position: absolute;
   height: 2px;
-  background-color: #fff;
-  background: linear-gradient(
-    to right,
-    rgba(254, 255, 255, 0) 0,
-    #fff 5%,
-    #fff 95%,
-    rgba(255, 255, 255, 0) 100%
-  )
-} */
+  width: 24%;
+  background-color: #0fd76a;
+  top: -14.5%;
+  left: 80px;
+}
 .others-border {
   width: 100%;
 }
@@ -686,6 +691,9 @@ body.enlang .videos-item p {
   margin-top: 5px;
   white-space: nowrap;
   width: 100%;
+}
+body.enlang .others-title-items .item-center p {
+  font-size: 14px;
 }
 .others-content {
   display: flex;
